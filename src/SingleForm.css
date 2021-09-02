@@ -1,0 +1,55 @@
+.SingleForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: var(--padding-main);
+  margin-bottom: .1rem;
+  font-size: 0.8rem;
+  backface-visibility: hidden;
+}
+
+.SingleForm form {
+  width: 100%;
+  border-top: 1px solid rgba(255,255,255, 0.3);
+}
+
+.input-container {
+  display: flex;
+  height: 2rem;
+}
+
+.input-container input {
+  height: 1.5rem;
+  flex-basis: 80%;
+  font-family: inherit;
+  outline: none;
+  border: none;
+  height: 100%;
+  padding-left: .5rem;
+}
+
+.input-container input:focus {
+  outline: none;
+}
+
+.input-container button {
+  height: 100%;
+  flex-basis: 20%;
+  border: 1px solid rgba(255,255,255, .3);
+  background: #ff6666;
+  color: white;
+  font-family: inherit;
+  font-size: .8rem;
+  transition: background 0.2s ease-out;
+}
+
+.input-container button:focus,
+.input-container button:active {
+  outline: none;
+}
+
+.input-container button:hover {
+  background: rgb(204, 54, 54);
+}
+

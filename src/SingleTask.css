@@ -1,0 +1,106 @@
+/************** SINGLE TASK ************/
+
+
+.task-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(255,255,255, .2);
+  padding-left: var(--padding-main);
+  padding-right: var(--padding-main);
+  padding-top: var(--padding-small);
+  padding-bottom: var(--padding-small);
+  margin-bottom: .1rem;
+  
+}
+
+.task {
+  position: relative;
+}
+
+.task.completed {
+  opacity: 0.6;
+}
+
+.task:hover {
+  cursor: pointer;
+}
+
+.completed::before {
+  content:'';
+  position: absolute;
+  left: -0.5rem;
+  top: 50%;
+  height: 2px;
+  width: 0%;
+  background: #fff;
+  animation: strikeitem 0.5s ease-out 0s forwards;
+}
+
+@keyframes strikeitem {
+  to {
+    width: calc(100% + 1rem);
+  }
+}
+
+.btn-container button {
+  border: none;
+  font-size: 1rem;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+  margin: 3px;
+  font-weight: 100;
+}
+
+.btn-container button:active,
+.btn-container button:focus {
+  outline: none;
+}
+
+.SingleTask-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-width: 100%;
+  background-color: rgba(255,255,255, .2);
+  padding-left: var(--padding-main);
+  padding-right: var(--padding-main);
+  padding-top: var(--padding-small);
+  padding-bottom: var(--padding-small);
+  margin-bottom: .1rem;
+
+}
+
+.SingleTask-form input {
+  height: 1.5rem;
+  flex-basis: 80%;
+  font-family: inherit;
+  outline: none;
+  border: none;
+  padding-left: 0.5rem;
+}
+
+.SingleTask-form input:focus {
+
+  outline: none;
+}
+
+.SingleTask-form button {
+  height: 1.5rem;
+  flex-basis: 20%;
+  border: 1px solid rgba(255,255,255, .3);
+  background: #ff6666;
+  color: white;
+  font-family: inherit;
+  transition: background 0.2s ease-out;
+  font-size: 0.8rem;
+}
+
+.SingleTask-form button:hover {
+  background: rgb(204, 54, 54);
+  cursor: pointer;
+}
+

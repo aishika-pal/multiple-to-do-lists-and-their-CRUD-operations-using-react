@@ -1,0 +1,66 @@
+.TitleForm {
+  padding: var(--padding-main);
+}
+
+.TitleForm p {
+  display: block;
+  font-size: 0.8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.Title-container {
+  height: 3.1rem;
+  width: 100%;
+  display: flex;
+  
+}
+
+.Title-container h1 {
+  height: 100%;
+  width: 100%;
+  font-weight: normal;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+
+.Title-container form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+.Title-container input {
+  flex-basis: 80%;
+  font-family: inherit;
+  outline: none;
+  border: none;
+  height: 60%;
+  padding-left: .5rem;
+}
+
+.Title-container input:focus {
+  outline: none;
+}
+
+.Title-container button {
+  height: 60%;
+  flex-basis: 20%;
+  border: 1px solid rgba(255,255,255, .3);
+  background: #ff6666;
+  color: white;
+  font-family: inherit;
+  font-size: .8rem;
+  transition: background 0.2s ease-out;
+}
+
+.Title-container button:focus,
+.Title-container button:active {
+  outline: none;
+}
+
+.Title-container button:hover {
+  background: rgb(204, 54, 54); 
+}

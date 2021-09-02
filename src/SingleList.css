@@ -1,0 +1,14 @@
+/************** SINGLE LIST ************/
+
+
+.singleList-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+}
+
+.singleList-container ul {
+  list-style: none;
+}
+
